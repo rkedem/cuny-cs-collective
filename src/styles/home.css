@@ -1,0 +1,111 @@
+.header-main{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    height: 65vh;
+    padding: 1rem;
+}
+
+.section-1{
+    margin: 0 1rem 2rem 1rem;
+}
+
+.headerImg{
+    max-width: 100%;
+    height: auto;
+}
+
+.intro{
+    margin: 0;
+    padding: 2rem 0 2rem 0;
+}
+
+.intro>h2{
+    color: #0032a1;
+    text-align: center;
+}
+
+.intro>p{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.op>h2{
+    color: #0032a1;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+p{
+    margin: 1rem 0 1rem 0;
+}
+
+.opportunites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1%;
+}
+
+.op{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 calc(33.333% - 32px); 
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    min-height: 300px;
+}
+
+ /*-----BUTTON-----*/
+ /* Button.css */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .header-main{
+        height: 30vh; 
+    }
+    .headerImg{
+        max-width: 60%;
+    }
+
+    .op {
+        flex: 1 1 calc(50% - 32px);
+    }
+}
+
+@media (max-width: 480px) {
+    .header-main{
+        height: 20vh;
+    }
+
+    .intro>p{
+        font-size: 1rem;
+    }
+
+    .op {
+        flex: 1 1 calc(100% - 32px);
+    }
+}
