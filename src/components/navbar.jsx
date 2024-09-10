@@ -13,7 +13,6 @@ const Navbar = () =>{
                     <img src={logo} alt="CUNY logo" />
                 </Link>
             </div>
-            
             <ul className="nav-links">
                 <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link></li>
                 <li><Link to="/about">About</Link></li>
